@@ -10,7 +10,7 @@ Pkg.add("Turing")
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function gdemo(x, y)
     s ~ InverseGamma(2, 3)

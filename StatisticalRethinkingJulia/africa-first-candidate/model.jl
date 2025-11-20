@@ -11,7 +11,7 @@ Pkg.develop(; path=ARGS[1])  # load Coinfer.jl
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function model_fn(log_gdp_std, rugged_std, mean_rugged)
     α ~ Normal(1, 0.1)

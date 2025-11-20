@@ -12,7 +12,7 @@ using Turing
 using Coinfer
 using StatsFuns: logistic
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m11_5(admit, applications)
     θ ~ truncated(Exponential(1), 0, Inf)

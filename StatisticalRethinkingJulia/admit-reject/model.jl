@@ -11,7 +11,7 @@ Pkg.develop(; path=ARGS[1])  # load Coinfer.jl
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m_pois(admit, reject)
     α₁ ~ Normal(0, 100)

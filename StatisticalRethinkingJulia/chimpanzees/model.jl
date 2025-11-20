@@ -12,7 +12,7 @@ using Turing
 using Coinfer
 using StatsFuns
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m10_3(y, x₁, x₂)
     α ~ Normal(0, 10)
