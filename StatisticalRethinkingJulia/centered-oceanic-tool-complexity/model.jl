@@ -14,7 +14,7 @@ using Turing
 using Coinfer
 using Statistics: mean
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m10_10stan_c(total_tools, log_pop_c, contact_high)
     α ~ Normal(0, 100)

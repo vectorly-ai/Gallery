@@ -8,7 +8,7 @@ Pkg.develop(; path=ARGS[1])  # load Coinfer.jl
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m8_2(y)
     α ~ Flat() ## improper prior with pobability one everywhere

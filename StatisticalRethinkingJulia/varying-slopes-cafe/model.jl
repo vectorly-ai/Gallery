@@ -11,7 +11,7 @@ Pkg.develop(; path=ARGS[1])  # load Coinfer.jl
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m13_1(cafe, afternoon, wait)
     Rho ~ LKJ(2, 1.0)

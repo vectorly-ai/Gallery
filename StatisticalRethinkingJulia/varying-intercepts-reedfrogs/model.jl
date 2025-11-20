@@ -13,7 +13,7 @@ using Random
 using Turing
 using StatsFuns: logistic
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function reedfrogs(Nᵢ, i, Sᵢ)
     αₜₐₙₖ ~ filldist(Normal(0, 1.5), length(i))

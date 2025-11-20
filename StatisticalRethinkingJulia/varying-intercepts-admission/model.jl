@@ -15,7 +15,7 @@ Pkg.add("DataFrames")
 using Coinfer
 using Turing
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m13_3(applications, dept_id, male, admit)
     Rho ~ LKJ(2, 2.0)

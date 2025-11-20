@@ -11,7 +11,7 @@ Pkg.develop(; path=ARGS[1])  # load Coinfer.jl
 using Turing
 using Coinfer
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m12_2(density, tank, surv)
     σ ~ truncated(Cauchy(0, 1), 0, Inf)

@@ -12,7 +12,7 @@ using Turing
 using Coinfer
 using StatsFuns
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m10_4(y, actors, x₁, x₂)
     ## Number of unique actors in the data set

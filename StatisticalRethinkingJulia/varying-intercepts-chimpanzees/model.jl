@@ -15,7 +15,7 @@ Pkg.add("DataFrames")
 using Coinfer
 using Turing
 
-flow = Coinfer.ServerlessBayes.current_workflow()
+flow = Coinfer.current_workflow()
 
 @model function m12_4(pulled_left, actor, condition, prosoc_left)
     ## Total num of y
